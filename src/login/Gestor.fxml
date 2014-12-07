@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchorpane" prefHeight="653.0" prefWidth="900.0" styleClass="fondotabla" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestor.GestorController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane id="panelTransitivo" layoutX="0.0" layoutY="0.0" prefHeight="377.0" prefWidth="898.0">
+      <children>
+        <MenuBar fx:id="menu" layoutX="1.0" layoutY="0.0" prefWidth="898.0">
+          <menus>
+            <Menu fx:id="archivo" mnemonicParsing="false" text="Archivo">
+              <items>
+                <MenuItem fx:id="salir" mnemonicParsing="false" onAction="#exit" text="Salir" />
+                <MenuItem fx:id="nuevo" mnemonicParsing="false" onAction="#nuevo" text="Nuevo" />
+              </items>
+            </Menu>
+            <Menu fx:id="editar" mnemonicParsing="false" text="Editar">
+              <items>
+                <MenuItem fx:id="eliminar" mnemonicParsing="false" onAction="#remover" text="Eliminar" />
+                <MenuItem fx:id="setUserPass" mnemonicParsing="false" onAction="#setUserAndPass" text="Establecer Login" />
+                <MenuItem fx:id="setDatabase" mnemonicParsing="false" onAction="#configDatabase" text="Establecer BD" />
+              </items>
+            </Menu>
+            <Menu fx:id="acerca" mnemonicParsing="false" text="Acerca">
+              <items>
+                <MenuItem fx:id="autor" mnemonicParsing="false" onAction="#about" text="autor.." />
+              </items>
+            </Menu>
+          </menus>
+        </MenuBar>
+        <TableView fx:id="tablaContactos" disable="false" editable="true" layoutY="24.0" prefHeight="355.0" prefWidth="846.0">
+          <columns>
+            <TableColumn fx:id="clDepartamento" maxWidth="5000.0" minWidth="10.0" prefWidth="132.0" text="Departamento" />
+            <TableColumn fx:id="clPuesto" maxWidth="5000.0" minWidth="10.0" prefWidth="106.0" text="Puesto" />
+            <TableColumn fx:id="clNombre" maxWidth="5000.0" minWidth="10.0" prefWidth="109.0" text="Nombre" />
+            <TableColumn fx:id="clApellido" maxWidth="5000.0" minWidth="10.0" prefWidth="161.0" text="Apellidos" />
+            <TableColumn fx:id="clFechaNacimiento" maxWidth="5000.0" minWidth="10.0" prefWidth="95.0" text="F. Nacimiento" />
+            <TableColumn fx:id="clTelefono" maxWidth="5000.0" minWidth="10.0" prefWidth="102.0" text="Telefono" />
+            <TableColumn fx:id="clEmail" maxWidth="5000.0" prefWidth="130.0" text="email" />
+            <TableColumn fx:id="clDireccion" maxWidth="5000.0" minWidth="10.0" prefWidth="208.0" text="Direccion" />
+          </columns>
+        </TableView>
+      </children>
+    </Pane>
+  <Pane fx:id="panelTransitivo" layoutX="-18.0" layoutY="358.0" prefHeight="298.0" prefWidth="898.0">
+    <children>
+      <Label layoutX="53.0" layoutY="201.0" text="Email:">
+        <font>
+          <Font name="System Bold" size="12.0" fx:id="x1" />
+        </font>
+        <textFill>
+          <Color blue="0.750" green="0.750" red="0.750" fx:id="x2" />
+        </textFill>
+      </Label>
+      <Label font="$x1" layoutX="53.0" layoutY="82.0" text="Nombre:" textFill="$x2" />
+      <Label font="$x1" layoutX="501.0" layoutY="82.0" text="Apellido:" textFill="$x2" />
+      <Label font="$x1" layoutX="53.0" layoutY="141.0" text="F. Nacimiento:" textFill="$x2" />
+      <Label font="$x1" layoutX="498.0" layoutY="141.0" text="Telefono:" textFill="$x2" />
+      <Label font="$x1" layoutX="498.0" layoutY="201.0" text="Direccion:" textFill="$x2" />
+      <TextField fx:id="txtNombre" layoutX="175.0" layoutY="79.0" prefWidth="164.0" />
+      <TextField fx:id="txtApellido" layoutX="635.0" layoutY="79.0" prefWidth="164.0" />
+      <TextField fx:id="txtFechaNacimiento" layoutX="175.0" layoutY="138.0" prefWidth="164.0" />
+      <TextField fx:id="txtTelefono" layoutX="635.0" layoutY="138.0" prefWidth="164.0" />
+      <TextField fx:id="txtEmail" layoutX="175.0" layoutY="198.0" prefWidth="164.0" />
+      <TextField fx:id="txtDireccion" layoutX="635.0" layoutY="198.0" prefWidth="164.0" />
+      <Button id="btnRegistrar" fx:id="btnGuardar" layoutX="50.0" layoutY="242.0" mnemonicParsing="false" onAction="#registrar" prefHeight="41.9609375" prefWidth="218.0" text="Guardar" />
+      <Button fx:id="btnBorrar" layoutX="325.0" layoutY="242.0" mnemonicParsing="false" onAction="#borrar" prefHeight="41.9609375" prefWidth="211.0" text="Borrar" />
+      <Button fx:id="btnCancelar" layoutX="588.0" layoutY="242.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="41.9609375" prefWidth="211.0" text="Cancelar" />
+            <TextField fx:id="txtPuesto" layoutX="633.0" layoutY="26.0" prefWidth="164.0" />
+            <TextField fx:id="txtDepartamento" layoutX="173.0" layoutY="26.0" prefWidth="164.0" />
+            <Label font="$x1" layoutX="499.0" layoutY="29.0" text="Puesto:" textFill="$x2" />
+            <Label font="$x1" layoutX="51.0" layoutY="29.0" text="Departamento:" textFill="$x2" />
+    </children>
+  </Pane>
+  </children>
+  <stylesheets>
+    <URL value="@agendastyle.css" />
+  </stylesheets>
+</AnchorPane>
