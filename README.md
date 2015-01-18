@@ -1,7 +1,8 @@
-GestorEmpleados
+SimpleHR
 ===============
 
 A single page desktop app for storage of your employees
+Una aplicación single page para administración de tus empleados
 
 ## Características
 ![Imagen 3](/images/HR_3.png)
@@ -55,5 +56,5 @@ Para los preocupados por el lado técnico, HRSimple utiliza las siguientes tecno
 Licencia
 ========
 
-Licenciado bajo GNUv2. Para más detalles ver el archivo LICENSE adjunto al código en éste repositorio.
+Licenciado bajo MIT. Para más detalles ver el archivo LICENSE adjunto al código en éste repositorio.
 
