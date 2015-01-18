@@ -15,9 +15,9 @@ A single page desktop app for storage of your employees
 
 ## Instalación
 ### Requisitos mínimos
-- Windows XP y superiores: Si bien la mayor parte del programa es multiplataforma, exíste un componente que solo funciona con windows, estoy trabajando en quitar ese componente (OneTouch SDK).
-- Java JRE 7u6
-- Lector de huella DigitalPersona u.are.u 4000 o 4500
+- Multiplataforma.
+- Java JRE 7u6.
+- Mysql Client / Server
 
 ### Instalación de la base de datos
 1. Descargar MySQL Server, desde la página oficial. [Página oficial de MySQL Server](http://dev.mysql.com/downloads/mysql/)
