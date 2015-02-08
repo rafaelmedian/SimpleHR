@@ -6,7 +6,7 @@ Una aplicación single page para administración de tus empleados
 
 ## Características
 ![Imagen 3](/images/HR_3.png)
-![Images](http://jsitech.com/wp-content/uploads/2014/12/how-to-install-and-set-up-git-on-ubuntu-14-04-lts-vps.jpg)
+
 - __Opensource__. Cualquiera puede extender nuestro código para implementar o modificar funciones en sus negocios, puede ser un excelente punto de partida para negocios que por su tamaño o especialización requieren una solución propia. Ésto siempre que respeten los términos de nuestra licencia :).
 - __Gratuito__. Excelente para pequeños y medianos negocios que requieran un sistema de para llevar control de sus empleados. Además las actualizaciones seguirá siendo gratuitas para siempre.
 - __Diseño__ moderno que da una buena presentación a los clientes y oscuro que reduce el cansancio visual de los usuarios
